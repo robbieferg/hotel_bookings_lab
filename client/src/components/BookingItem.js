@@ -1,4 +1,12 @@
 const BookingItem = ({booking, deleteBooking}) =>{
+    const checkedInString = (value) => {
+        let string = "Yes";
+        if (value.toString() === "false") {
+            string = "No";
+        };
+        return string;
+    }
+
     return (
         <>
             <h2>Name:</h2>
@@ -6,7 +14,7 @@ const BookingItem = ({booking, deleteBooking}) =>{
             <h2>Email Address:</h2>
             <p>{booking.email}</p>
             <h2>Checked In?</h2>
-            <p>{booking.checkedIn}</p>
+            <p>{checkedInString(booking.checkedIn)}</p>
             <button onClick={()=>deleteBooking(booking._id)}> Delete </button>
             <hr></hr>
         </>
