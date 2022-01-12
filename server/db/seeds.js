@@ -1,9 +1,7 @@
-const Db = require("mongodb/lib/db");
-
 use hotel;
-Db.dropDatabase();
+db.dropDatabase();
 
-Db.bookings.insertMany([
+db.bookings.insertMany([
     {
         name: "Thomas Anderson",
         email: "mranderson@netscape.com",
