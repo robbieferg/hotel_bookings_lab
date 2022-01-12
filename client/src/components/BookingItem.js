@@ -8,9 +8,10 @@ const BookingItem = ({booking, deleteBooking}) =>{
             <h2>Checked In?</h2>
             <p>{booking.checkedIn}</p>
             <button onClick={()=>deleteBooking(booking._id)}> Delete </button>
+            <hr></hr>
         </>
-    )
-}
+    );
+};
 
 
-export default GameCard;
+export default BookingItem;

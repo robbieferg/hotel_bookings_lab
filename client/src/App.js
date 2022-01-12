@@ -1,12 +1,12 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import BookingContainer from './containers/BookingContainer';
 
 
 
 
 function App() {
   return (
-   
+    <BookingContainer/>
   );
 }
 
